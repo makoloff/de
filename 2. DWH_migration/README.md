@@ -43,10 +43,13 @@ shippingid
 vendorid
 transfer_type — тип доставки из таблицы shipping_transfer
 full_day_at_shipping — количество полных дней, в течение которых длилась доставка. Высчитывается как:shipping_end_fact_datetime-shipping_start_fact_datetime.
-is_delay — статус, показывающий просрочена ли доставка. Высчитывается как:shipping_end_fact_datetime >> shipping_plan_datetime → 1 ; 0
+
+is_delay — статус, показывающий просрочена ли доставка. Высчитывается как: shipping_end_fact_datetime >> shipping_plan_datetime → 1 ; 0
 is_shipping_finish — статус, показывающий, что доставка завершена. Если финальный status = finished → 1; 0
-delay_day_at_shipping — количество дней, на которые была просрочена доставка. Высчитыается как: shipping_end_fact_datetime >> shipping_end_plan_datetime → shipping_end_fact_datetime -− shipping_plan_datetime ; 0).
+
+delay_day_at_shipping — количество дней, на которые была просрочена доставка. Высчитыается как: shipping_end_fact_datetime >> shipping_end_plan_datetime → shipping_end_fact_datetime -− shipping_plan_datetime ; 0.
+
 payment_amount — сумма платежа пользователя
-vat — итоговый налог на доставку. Высчитывается как: payment_amount *∗ ( shipping_country_base_rate ++ agreement_rate ++ shipping_transfer_rate) .
+vat — итоговый налог на доставку. Высчитывается как: payment_amount *( shipping_country_base_rate ++ agreement_rate ++ shipping_transfer_rate) .
 profit — итоговый доход компании с доставки. Высчитывается как: payment_amount*∗ agreement_commission.
 
