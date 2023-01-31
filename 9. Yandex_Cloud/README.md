@@ -41,7 +41,7 @@
 
 
 Финальный дашборд в Datalens
-![Image alt](https://github.com/makoloff/de/blob/main/9.%20Yandex_Cloud/img/dashboard.jpg)
+![Image alt](https://github.com/makoloff/de/blob/main/9.%20Yandex_Cloud/img/dashboard.png)
 
 
 
