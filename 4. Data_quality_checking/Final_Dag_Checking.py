@@ -1,4 +1,3 @@
-# дополните код в местах где указано троеточие - ...
 from airflow import DAG
 from airflow.sensors.filesystem import FileSensor
 from datetime import datetime
