@@ -7,7 +7,7 @@
 
 Общая схема инфраструктуры DWH Cloud
 
-![Image alt](https://github.com/pamakolov/de-project-sprint-9/raw/main/jpg/dwh_schema_cloud_infra.jpg)
+![Image alt](https://github.com/makoloff/de/blob/main/9.%20Yandex_Cloud/img/dwh_schema_cloud_infra.jpg)
 
 
 ## Описание логики и вопросы
