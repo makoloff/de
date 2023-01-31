@@ -21,7 +21,7 @@
 - datetime — время совершения event.
 
 2. Создать в слое постоянного хранения таблицы для новых данных.Например, по схеме:
-![Image alt](https://github.com/makoloff/de/blob/main/9.%20Yandex_Cloud/img/dwh_schema_cloud_infra.jpg)
+![Image alt](https://github.com/makoloff/de/blob/main/6.%20Analytic_Databases/img/schema.png)
 
 3. Перенести новые данные из staging-области в слой DDS.
 4. Рассчитать конверсионные показатели для десяти самых старых групп:
