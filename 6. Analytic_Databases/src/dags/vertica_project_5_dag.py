@@ -33,8 +33,8 @@ def create_folder():
 # скачиваем файл из источника
 def fetch_s3_file(bucket: str, key: str):
 
-    AWS_ACCESS_KEY_ID = "YCAJEWXOyY8Bmyk2eJL-hlt2K"
-    AWS_SECRET_ACCESS_KEY = "YCPs52ajb2jNXxOUsL4-pFDL1HnV2BCPd928_ZoA"
+    AWS_ACCESS_KEY_ID = "YCAJEWXOyY8Bmyk2eJL-****"
+    AWS_SECRET_ACCESS_KEY = "YCPs52ajb2jNXxOUsL4-pFDL1HnV2BCPd92****"
     file_path = '/data/'+key
 
     print(f'file_path: {file_path}')
@@ -65,10 +65,10 @@ def fetch_s3_file(bucket: str, key: str):
 def ddl_stg_group_log():
     
     conn_info = {
-                    'host': '51.250.75.20', # Адрес сервера из инструкции
+                    'host': '51.***.75.**', # Адрес сервера из инструкции
                     'port': 5433,
-                    'user': 'UNKNOWNPAVELYANDEXRU',    # Полученный логин
-                    'password': 'kWMT59eg4FpmnLV',     # пароль
+                    'user': 'UNKNOWN****',    # Полученный логин
+                    'password': 'kWMT59eg***',     # пароль
                     'database': 'dwh',
                     'autocommit': True
                 }
@@ -107,10 +107,10 @@ def ddl_stg_group_log():
 def read_load_group_log():
 
     conn_info = {
-                    'host': '51.250.75.20', # Адрес сервера из инструкции
+                    'host': '51.***.75.**', # Адрес сервера из инструкции
                     'port': 5433,
-                    'user': 'UNKNOWNPAVELYANDEXRU',   # Полученный логин
-                    'password': 'kWMT59eg4FpmnLV',    # пароль. 
+                    'user': 'UNKNOWN****',   # Полученный логин
+                    'password': 'kWMT59eg***',    # пароль. 
                     'database': 'dwh',
                     'autocommit': True
                 }
@@ -147,10 +147,10 @@ def read_load_group_log():
 def ddl_dwh_l_user_group_activity():
     
     conn_info = {
-                    'host': '51.250.75.20', # Адрес сервера из инструкции
+                    'host': '51.***.75.**', # Адрес сервера из инструкции
                     'port': 5433,
-                    'user': 'UNKNOWNPAVELYANDEXRU',    # Полученный логин
-                    'password': 'kWMT59eg4FpmnLV',     # пароль
+                    'user': 'UNKNOWN****',   # Полученный логин
+                    'password': 'kWMT59eg***',    # пароль. 
                     'database': 'dwh',
                     'autocommit': True
                 }
@@ -185,10 +185,10 @@ def ddl_dwh_l_user_group_activity():
 def load_l_user_group_activity():
 
     conn_info = {
-                    'host': '51.250.75.20', # Адрес сервера из инструкции
+                    'host': '51.***.75.**', # Адрес сервера из инструкции
                     'port': 5433,
-                    'user': 'UNKNOWNPAVELYANDEXRU',   # Полученный логин
-                    'password': 'kWMT59eg4FpmnLV',    # пароль. 
+                    'user': 'UNKNOWN****',   # Полученный логин
+                    'password': 'kWMT59eg***',    # пароль. 
                     'database': 'dwh',
                     'autocommit': True
                 }
@@ -225,10 +225,10 @@ def load_l_user_group_activity():
 def ddl_dwh_s_auth_history():
     
     conn_info = {
-                    'host': '51.250.75.20', # Адрес сервера из инструкции
+                    'host': '51.***.75.**', # Адрес сервера из инструкции
                     'port': 5433,
-                    'user': 'UNKNOWNPAVELYANDEXRU',    # Полученный логин
-                    'password': 'kWMT59eg4FpmnLV',     # пароль
+                    'user': 'UNKNOWN****',   # Полученный логин
+                    'password': 'kWMT59eg***',    # пароль. 
                     'database': 'dwh',
                     'autocommit': True
                 }
@@ -260,10 +260,10 @@ def ddl_dwh_s_auth_history():
 def load_s_auth_history():
 
     conn_info = {
-                    'host': '51.250.75.20', # Адрес сервера из инструкции
+                    'host': '51.***.75.**', # Адрес сервера из инструкции
                     'port': 5433,
-                    'user': 'UNKNOWNPAVELYANDEXRU',   # Полученный логин
-                    'password': 'kWMT59eg4FpmnLV',    # пароль. 
+                    'user': 'UNKNOWN****',   # Полученный логин
+                    'password': 'kWMT59eg***',    # пароль. 
                     'database': 'dwh',
                     'autocommit': True
                 }
