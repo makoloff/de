@@ -40,6 +40,10 @@
 ![Image alt](https://github.com/makoloff/de/blob/main/9.%20Yandex_Cloud/img/cdm_input_msg_df.jpg)
 
 
+Финальный дашборд в Datalens
+![Image alt](https://github.com/makoloff/de/blob/main/9.%20Yandex_Cloud/img/dashboard.jpg)
+
+
 
 
 
