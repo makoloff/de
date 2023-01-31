@@ -1,6 +1,7 @@
 # Проект 8-го спринта
 
 ## Схема проекта
+![Image alt](https://github.com/makoloff/de/tree/main/8.%20Spark_Structured_Streaming/img)
 
 
 ## Реализация приложения
