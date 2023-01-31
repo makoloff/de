@@ -1,0 +1,19 @@
+1. внесение правок в *.py файлы
+2. в папке app в файле values.yaml внесение нового номера релиза в блоке image -> tag
+3. создание нового образа локально на компьютере
+docker build . -t cr.yandex/crp3hipguhp5cgbb9hm6/cdm-service:v2023-01-08-r12
+4. отправка этого нового образа в репозиторий на облако
+ docker push cr.yandex/crp3hipguhp5cgbb9hm6/cdm-service:v2023-01-08-r12
+5. просмотр, что все появилось в облаке Container Registry -> Реестры -> de-registry -> cdm-service
+6. удаление сервиса из kubernetes через утилиту kubectl с указанием своего namespace
+kubectl delete deploy cdm-service -n c03-pavel-makolov
+7. проверить поды, что отключены
+kubectl get pods
+8. через пакет helm зарелизить новый сервис с новой версией тега из values.yaml
+helm upgrade --install cdm-service "C:\Users\PaulA\Desktop\Data_Engineering\9. Облачные технологии Yandex Cloud\Проект\de-project-sprint-9\solution\service_cdm\app" -n c03-pavel-makolov
+9. проверить, что сервис поднялся и поды тоже
+kubectl get deployment
+kubectl get pods
+10. проверить логи поды, что все работает и нет ошибок
+kubectl logs cdm-service-68b5568b4f-wxvsc
+11. найти ошибки и вернуться на пункт 1.

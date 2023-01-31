@@ -1,0 +1,48 @@
+{
+'object_id': 515006, 
+'object_type': 'order', 
+'payload': {
+			'id': 515006, 
+			'date': '2022-12-13 15:34:44', 
+			'cost': 420, 
+			'payment': 420, 
+			'status': 'CLOSED', 
+
+			'restaurant': {
+						'id': 'ebfa4c9b8dadfc1da37ab58d', 
+						'name': 'PLove'
+					}, 
+
+			'user': {
+					'id': '626a81ce9a8cd1920641e266', 
+					'name': 'Никифоров Гаврила Всеволодович', 
+					'login': 'strelkovmaksim'
+				}, 
+
+			'products': [
+						{
+							'id': 'c1b046c8b2184d586ea74928', 
+							'price': 290, 
+							'quantity': 4, 
+							'name': 'Ассорти пхали', 
+							'category': 'Закуски'
+						}, 
+
+						{
+							'id': 'a46c44c7a2116150664eec02', 
+							'price': 250, 
+							'quantity': 5, 
+							'name': 'Мини кубдари с курицей и сыром', 
+							'category': 'Выпечка'
+						}, 
+
+						{
+							'id': '48ae4b6791696398de59d8f7', 
+							'price': 50, 
+							'quantity': 4, 
+							'name': 'Соус Сацибели', 
+							'category': 'Соусы'
+						}
+					]
+		}
+}

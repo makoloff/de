@@ -1,0 +1,8 @@
+C:\Users\PaulA\Desktop\Data_Engineering\9. Облачные технологии Yandex Cloud\windows-amd64>helm upgrade --install dds-service "C:\Users\PaulA\Desktop\Data_Engineering\9. Облачные технологии Yandex Cloud\Проект\de-project-sprint-9\solution\service_dds\app" -n c03-pavel-makolov
+Release "dds-service" has been upgraded. Happy Helming!
+NAME: dds-service
+LAST DEPLOYED: Sat Jan  7 23:03:21 2023
+NAMESPACE: c03-pavel
+STATUS: deployed
+REVISION: 7
+TEST SUITE: None

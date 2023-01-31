@@ -1,0 +1,26 @@
+{
+	'id': 512513, 
+	'user': '6d9ced61-24f4-5cc9-be9e-3938ad94cbe4', 
+	'products': [
+				{
+					'product_uuid': '84228d10-87bb-587f-b04c-24b57b2ea875', 
+					'product_name': 'Салат Оливье', 
+					'category_uuid': '1cdc77a4-66dd-5b81-9625-19efbd6667df', 
+					'category_name': 'Салаты'
+				}, 
+
+				{
+					'product_uuid': 'ce2d62c5-6b45-5c7f-b04d-88c469cc9fb4', 
+					'product_name': 'Плов ферганский', 
+					'category_uuid': 'c71ba4a6-b4e3-5142-b2f5-d3e75dbdabfe', 
+					'category_name': 'Основные блюда'
+				}, 
+
+				{
+					'product_uuid': 'c6a936ea-5957-5489-9928-edaa2f5c7d37', 
+					'product_name': 'Шурпа из говядины', 
+					'category_uuid': 'a6634f95-e0ef-55cd-a685-88eb672ab221', 
+					'category_name': 'Супы'
+				}
+			]
+}
