@@ -38,8 +38,8 @@ from airflow.operators.sql import (
 
 nickname = 'MP'
 cohort = '3'
-api_key = '25c27781-8fde-4b30-a22e-524044a7580f'
-base_url = 'https://d5d04q7d963eapoepsqr.apigw.yandexcloud.net'
+api_key = '25c27781-8fde-4b30-a22e-524044a7****'
+base_url = 'https://d5d04q7d963eapoe****.apigw.yandexcloud.net'
 
 headers = {
     'X-Nickname': nickname,
@@ -53,7 +53,7 @@ postgres_hook = PostgresHook(PG_CONN_ID)
 example_conn =  postgres_hook.get_conn()
 
 '''
-curl --location --request GET 'https://d5d04q7d963eapoepsqr.apigw.yandexcloud.net/restaurants?sort_field={{ sort_field }}&sort_direction={{ sort_direction }}&limit={{ limit }}&offset={{ offset }}' --header 'X-Nickname: {{ your_nickname }}' --header 'X-Cohort: {{ your_cohort_number }}' --header 'X-API-KEY: {{ api_key }}' 
+curl --location --request GET 'https://d5d04q7d963eapoe****.apigw.yandexcloud.net/restaurants?sort_field={{ sort_field }}&sort_direction={{ sort_direction }}&limit={{ limit }}&offset={{ offset }}' --header 'X-Nickname: {{ your_nickname }}' --header 'X-Cohort: {{ your_cohort_number }}' --header 'X-API-KEY: {{ api_key }}' 
 '''
 
 def ddl_stg_restaurants():
@@ -152,7 +152,7 @@ def load_to_stg_api_couriers():
 
     while True:
     
-        url = f'https://d5d04q7d963eapoepsqr.apigw.yandexcloud.net/couriers?offset={offset}&limit={limit}'
+        url = f'https://d5d04q7d963eapoe****.apigw.yandexcloud.net/couriers?offset={offset}&limit={limit}'
         response = requests.get(url, headers=headers)
         response.raise_for_status()
         
@@ -230,7 +230,7 @@ def load_to_stg_api_deliveries():
     records = []
     while True:
         
-        url = f'https://d5d04q7d963eapoepsqr.apigw.yandexcloud.net/deliveries?offset={offset}&limit={limit}'
+        url = f'https://d5d04q7d963eapoe****.apigw.yandexcloud.net/deliveries?offset={offset}&limit={limit}'
         response = requests.get(url, headers=headers)
         response.raise_for_status()
         
