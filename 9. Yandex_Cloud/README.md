@@ -14,7 +14,7 @@
 **Слой DDS**
 
 Схема DWH по методологии Data Vault
-![Image alt](https://github.com/pamakolov/de-project-sprint-9/raw/main/jpg/dds_layer_eer_diagram.jpg)
+![Image alt](https://github.com/makoloff/de/blob/main/9.%20Yandex_Cloud/img/dds_layer_eer_diagram.jpg)
 
 5. Для случаев, когда в json-сообщении есть вложенный лист из значений я через цикл прохожу по листу в самом цикле вызываю функцию заливки в PostgreSQL, насколько это оптимально и есть ли другой способ?
 
@@ -37,30 +37,10 @@
 - и заливка этого листа через cursor.executemany в Postgresql
 
 форматы входящих и преобразованных датафреймов\данных следующие
-![Image alt](https://github.com/pamakolov/de-project-sprint-9/raw/main/jpg/cdm_input_msg_df.jpg)
+![Image alt](https://github.com/makoloff/de/blob/main/9.%20Yandex_Cloud/img/cdm_input_msg_df.jpg)
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-### Как работать с репозиторием
-1. В вашем GitHub-аккаунте автоматически создастся репозиторий `de-project-sprint-9` после того, как вы привяжете свой GitHub-аккаунт на Платформе.
-2. Скопируйте репозиторий на свой компьютер. В качестве пароля укажите ваш `Access Token`, который нужно получить на странице [Personal Access Tokens](https://github.com/settings/tokens)):
-	* `git clone https://github.com/{{ username }}/de-project-sprint-9.git`
-3. Перейдите в директорию с проектом: 
-	* `cd de-project-sprint-9`
-4. Выполните проект и сохраните получившийся код в локальном репозитории:
-	* `git add .`
-	* `git commit -m 'my best commit'`
-5. Обновите репозиторий в вашем GitHub-аккаунте:
-	* `git push origin main`
