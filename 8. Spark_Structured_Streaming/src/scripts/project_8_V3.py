@@ -69,7 +69,7 @@ def read_promo_stream(spark: SparkSession) -> DataFrame:
         spark
         .readStream
         .format('kafka')
-        .option('kafka.bootstrap.servers', 'rc1b-2erh7b35n4j4v869.mdb.yandexcloud.net:9091')
+        .option('kafka.bootstrap.servers', 'rc1b-2erh7b35n4j4****.mdb.yandexcloud.net:9091')
         .options(**kafka_security_options)
         .option("subscribe", TOPIC_NAME_in)
         .option("startingOffsets", "earliest")
@@ -95,7 +95,7 @@ def read_promo_stream(spark: SparkSession) -> DataFrame:
 # чтение данных из postgresql
 def read_pg_client(spark: SparkSession) -> DataFrame:
 
-    host = 'rc1a-fswjkpli01zafgjm.mdb.yandexcloud.net'
+    host = 'rc1a-fswjkpli01za****.mdb.yandexcloud.net'
     port = 6432
     schema = 'public'
     dbtable = 'public.subscribers_restaurants'
@@ -138,7 +138,7 @@ def join(promo_kafka_df, client_pg_df) -> DataFrame:
 def write_to_postgres(df, epoch_id):
 
     mode="append"
-    host = 'rc1a-fswjkpli01zafgjm.mdb.yandexcloud.net'
+    host = 'rc1a-fswjkpli01za****.mdb.yandexcloud.net'
     port = 6432
     schema = 'public'
     dbtable = 'public.subscribers_feedback'
@@ -160,7 +160,7 @@ def foreach_batch_function(df, epoch_id):
 
     # записываем df в PostgreSQL с полем feedback
     mode="append"
-    host = 'rc1a-fswjkpli01zafgjm.mdb.yandexcloud.net'
+    host = 'rc1a-fswjkpli01za****.mdb.yandexcloud.net'
     port = 6432
     schema = 'public'
     dbtable = 'public.subscribers_feedback'
@@ -204,7 +204,7 @@ def foreach_batch_function(df, epoch_id):
         .write
         .format("kafka")
         #.outputMode("append")
-        .option('kafka.bootstrap.servers', 'rc1b-2erh7b35n4j4v869.mdb.yandexcloud.net:9091')
+        .option('kafka.bootstrap.servers', 'rc1b-2erh7b35n4j4****.mdb.yandexcloud.net:9091')
         .options(**kafka_security_options)
         .option("topic", TOPIC_NAME_out)
         .option("checkpointLocation", "/tmp/folder_tmp/checkpoint")
