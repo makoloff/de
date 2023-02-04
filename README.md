@@ -3,13 +3,13 @@
 ### Список:
 
 2. DWH: Пересмотр модели данных \ миграция данных.  
-Стек: SQL, Python.
+*Stack*: SQL, Python.
 
 3. ETL: автоматизация подготовки данных.  
-Стек: AirFlow, Postgresql, SQL, Python.
+*Стек*: AirFlow, Postgresql, SQL, Python.
 
 4. Проверка качества данных.  
-Стек: AirFlow, Postgresql, SQL, Python.
+*Стек*: AirFlow, Postgresql, SQL, Python.
 
 5. DWH для нескольких источников.  
 Стек: AirFlow, Postgresql, MongoDB, SQL, Python.
