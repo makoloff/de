@@ -3,26 +3,22 @@
 ### Варианты исполнения  
 ![Image alt](https://github.com/makoloff/de/blob/main/10.%20Final_project/img/infra.png)  
 
-## Описание логики  
+## Описание логики через Spark Streming  
 **DAG №1.**  
 1.1. Создание таблиц в слое STG Postgresql для заливки сырых данных as is
 1.2. Чтение сообщений из топика Kafka посредством Spark Streaming
 1.3. Десериализация сообщений и загрузка каждого df в соответствующую таблицу в слой STG Postgresql  
-картинка 1го дага
+![Image alt](https://github.com/makoloff/de/blob/main/10.%20Final_project/img/1st_dag.jpg)
 
 **DAG № 2.**  
 2.1. Запуск DAG-а через сенсор 1-го DAG-а
 2.2. Создание таблиц в слое STG в Vertica
-2.3. Заливка данных через поток битовых данных pandas df в таблицы _raw и затем в таргетную таблицу на Vertica (для дедупликации)
+2.3. Заливка данных через поток битовых данных pandas df в таблицы _raw и затем в таргетную таблицу на Vertica (для дедупликации)  
 2.4. Загрузка расчетов свежего дня в таргетную витрину в слое CDM  
-картинка 2го дага
+![Image alt](https://github.com/makoloff/de/blob/main/10.%20Final_project/img/2nd_dag.jpg)
 
 **Часть 3. Дашборд в Metabase.**  
-картинка дашборда
-
-
-
-
+![Image alt](https://github.com/makoloff/de/blob/main/10.%20Final_project/img/dashboard.png)
 
 
 
