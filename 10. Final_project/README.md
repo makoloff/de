@@ -7,7 +7,7 @@
 **DAG №1.**  
 1.1. Создание таблиц в слое STG Postgresql для заливки сырых данных as is  
 1.2. Чтение сообщений из топика Kafka посредством Spark Streaming  
-1.3. Десериализация сообщений и загрузка каждого df в соответствующую таблицу в слой STG Postgresql  
+1.3. Десериализация сообщений и загрузка каждого df в соответствующую таблицу в слой STG Postgresql    
 ![Image alt](https://github.com/makoloff/de/blob/main/10.%20Final_project/img/1st_dag.jpg)  
 
 **DAG № 2.**  
