@@ -1,7 +1,7 @@
 # Итоговый проект
 
 ### Варианты исполнения  
-тут картинка  
+![Image alt](https://github.com/makoloff/de/blob/main/10.%20Final_project/img/infra.png)  
 
 ## Описание логики  
 **DAG №1.**  
@@ -61,7 +61,7 @@
         "producer_password": "пароль_от_продюсера_к_вашей_kafka"
     }
 }
-EOF`
+EOF`  
 К вам будут поступать сообщения двух типов:  
 транзакции: object_type = `TRANSACTION`;  
 курсы валют: object_type = `CURRENCY`.  
