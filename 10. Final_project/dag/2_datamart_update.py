@@ -17,10 +17,10 @@ from airflow.sensors.external_task_sensor import ExternalTaskSensor
 
 # creds for vertica
 conn_info = {
-                'host': '51.250.75.20', 
+                'host': '51.250.**.**', 
                 'port': 5433,
-                'user': 'UNKNOWNPAVELYANDEXRU',    
-                'password': 'kWMT59eg4FpmnLV',    
+                'user': 'UNKNOWN**',    
+                'password': 'kWMT59eg**',    
                 'database': 'dwh',
                 'autocommit': True
             }
