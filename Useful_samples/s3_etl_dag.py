@@ -14,9 +14,9 @@ def get_files_from_s3(business_dt,s3_conn_name):
     session = boto3.session.Session()
 
     BUCKET_NAME = 's3-sprint3'
-    # пример key = 'cohort_0/aa-tolmachev/TWpBeЕНуHdOUzB4TlZRd09Ub3hNem94TkFsaFlTMTBiMnh0WVdOb1pYWT0=/' - этот пример не рабочий, испоьзуйте свои значения
+    # пример key = 'cohort_0/aa-nickname/TWpBeЕНуHdOUzB4TlZRd09Ub3hNem94TkFsaFlTMTBiMnh0WVdOb1pYWT0=/' - этот пример не рабочий, испоьзуйте свои значения
     
-    key = 'cohort_3/Makolov/TWpBeU1pMHdOaTB5TjFReE5Eb3pNVG93TndsTllXdHZiRzky/user_orders_log.csv'
+    key = 'cohort_3/nickname/TWpBeU1pMHdOaTB5TjFReE5Eb3pNVG93TndsTllXdHZiRzky/user_orders_log.csv'
     
     s3 = session.client(
         service_name=s3_conn_name,
